@@ -444,6 +444,7 @@
           },
 
           submitForm(formName, st) {
+            console.log("hhhlsjdflsjd", this.ruleForm)
             this.$refs[formName].validate((valid) => {
               if (valid) {
                 let params = {...this.ruleForm}
