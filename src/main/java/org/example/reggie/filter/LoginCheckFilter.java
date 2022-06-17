@@ -4,8 +4,6 @@ import com.alibaba.fastjson.JSON;
 import lombok.extern.slf4j.Slf4j;
 import org.example.reggie.common.BaseContext;
 import org.example.reggie.common.R;
-import org.springframework.boot.web.servlet.ServletComponentScan;
-import org.springframework.stereotype.Service;
 import org.springframework.util.AntPathMatcher;
 
 import javax.servlet.*;
@@ -14,7 +12,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-import static com.sun.xml.internal.ws.api.message.Packet.Status.Request;
 
 @Slf4j
 @WebFilter(filterName = "loginCheckFilter", urlPatterns = "/*")
